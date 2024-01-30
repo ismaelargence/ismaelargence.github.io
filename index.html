@@ -7,22 +7,113 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body class="bg-neutral-100 dark:bg-sky-950">
-    <header class="mt-5">
-        <div class="ml-5 mr-10 float-left block">
-            <button type="button" class="text-black bg-gradient-to-r from-orange-100 via-neutral-200 to-neutral-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-neutral-200 dark:focus:ring-slate-900 shadow-lg shadow-slate-300 dark:shadow-lg dark:shadow-sky-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-4">About me</button><br>
-            <button type="button" class="text-black bg-gradient-to-r from-orange-100 via-neutral-200 to-neutral-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-neutral-200 dark:focus:ring-slate-900 shadow-lg shadow-slate-300 dark:shadow-lg dark:shadow-sky-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-4">Education & experience</button><br>
-            <button type="button" class="text-black bg-gradient-to-r from-orange-100 via-neutral-200 to-neutral-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-neutral-200 dark:focus:ring-slate-900 shadow-lg shadow-slate-300 dark:shadow-lg dark:shadow-sky-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-4">Projects & skills</button><br>
-            <button type="button" class="text-black bg-gradient-to-r from-orange-100 via-neutral-200 to-neutral-300 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-neutral-200 dark:focus:ring-slate-900 shadow-lg shadow-slate-300 dark:shadow-lg dark:shadow-sky-900 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-4">Contacts</button>
-        </div>
-    </header>
-
-    <section class="mt-5">
-        <a href="#" class="block w-max float-left p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+    <div class="grid grid-cols-4 gap-4 m-5">
+        <div href="#" class="col-span-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
             <p class="text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Ismaël Argence</p>
-            <p class="font-normal text-gray-700 dark:text-gray-400 mt-5">Passionné par le développement web, je suis curieux, créatif, autonome et j'apprécie le travail en équipe.</p>
-            <img src="src/assets/fr.svg" alt="">
-        </a>
-    </section>
+            <p class="text-xl font-normal text-gray-700 dark:text-gray-400 mt-5">Passionné par le développement web, je suis curieux, créatif, autonome et j'apprécie le travail en équipe.</p>
+        </div>
+
+        <div class="p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <p class="mb-2 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Informations</p>
+            <ul class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400">
+                <li>+33 7 49 28 47 32</li>
+                <li>ismaelargence3@gmail.com</li>
+                <li>Ile-De-France</li>
+                <li>20 ans</li>
+                <li>Permis A2</li>
+            </ul>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <button type="button" class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">
+                <img class="w-5 mr-5" src="src/assets/gitlogo.svg" alt="">
+                <p>My Github</p>
+                <svg class="ml-5 rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+            <div></div>
+            <div></div>
+            <button type="button" class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">
+                <img class="w-5 mr-5" src="src/assets/linkdin.svg" alt="">
+                My Linkdin
+                <svg class="ml-5 rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                </svg>
+            </button>
+        </div>
+
+        <div  class="p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <p class="mb-2 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Education</p>
+            <div class="mb-2">
+                <p class="text-xl font-normal text-gray-700 dark:text-gray-400 mt-5">2021 - 2024</p>
+                <p class="text-xl tracking-tight font-semibold text-gray-900 dark:text-white">3ème année de BUT informatique</p>
+                <p class="text-xl font-normal text-gray-700 dark:text-gray-400">IUT de Montreuil (93), Université Paris 8</p>
+            </div>
+            <div class="mb-2">
+                <p class="text-xl font-normal text-gray-700 dark:text-gray-400 mt-5">2018 - 2021</p>
+                <p class="text-xl tracking-tight font-semibold text-gray-900 dark:text-white">Baccalauréat spé SI - NSI Mention bien</p>
+                <p class="text-xl font-normal text-gray-700 dark:text-gray-400">Lycée Condorcet, Montreuil (93)</p>
+            </div>
+        </div>
+
+        <div class="col-span-2 p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <p class="mb-2 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Hard Skills</p>
+            <div class="grid grid-cols-4 gap-4">
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Java</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Python</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">PHP</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">SQL</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">HTML</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">CSS</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">JS</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Angular TS</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">SQLAlchemy</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Flask</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">PHPMyAdmin</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Tailwindcss</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Bootstrap</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Git</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Agile</div>
+                <div class="text-black bg-orange-100 hover:bg-orange-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center me-2 dark:text-white dark:bg-orange-800 dark:hover:bg-orange-700 dark:focus:ring-orange-900">Figma</div>
+            </div>
+        </div>
+
+        <div class="p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+            <p class="mb-2 text-4xl tracking-tight font-bold text-gray-900 dark:text-white">Languages</p>
+            <div class="mt-4">
+                <img src="src/assets/fr.svg" alt="" class="w-10 float-left mr-5"><p class="text-xl tracking-tight font-semibold text-gray-900 dark:text-white">Native</p><br>
+                <img src="src/assets/gb.svg" alt="" class="w-10 float-left mr-5 mb-5"><p class="text-xl tracking-tight font-semibold text-gray-900 dark:text-white">B2</p><br>
+                <img src="src/assets/it.svg" alt="" class="w-10 float-left mr-5"><p class="text-xl tracking-tight font-semibold text-gray-900 dark:text-white">Native</p>
+            </div>
+        </div>
+        <div class="col-span-2 w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <img class="rounded-t-lg" src="src/assets/courroux.png" alt="" />
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Courroux</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Courroux is a web application developed for timetable management, initiated by the pedagogical manager of the Computer Science department at IUT de Montreuil. The aim is to revamp the existing timetable system used at the IUT, as the Java JWT timetable created in 2004 no longer aligns with the evolving needs of various users. This application is designed to be versatile and is extendable for use by other universities. Moreover, its open-source license permits users to modify it freely, and there's an option to utilize only the API and reconstruct the front-end from scratch.</p>
+                <a href="https://github.com/DUT-Info-Montreuil/SAE_5.A-Courroux" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Go to github
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="col-span-2 w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <img class="rounded-t-lg" src="src/assets/courroux.png" alt="" />
+            <div class="p-5">
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+                <a href="#" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                    Read more
+                    <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <footer>
 
